@@ -1,21 +1,18 @@
-var $contactForm = $('#contactform');
-$contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: 'https://formspree.io/txcdxevubase@mail.ru',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-		},
-		success: function(data) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-		},
-		error: function(err) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-		}
+$(document).ready(function() {
+    $('#contactform').submit(function(e) {
+        $.ajax({
+	    method: 'POST',
+	    url: '//formspree.io/txcdxevubase@mail.ru',
+	    data: $('#contactform').serialize(),
+	    datatype: 'json'
 	});
+	e.preventDefault();
+	$(this).get(0).reset();
+	$('.submit-success').fadeToggle(400);
+    });
+  
+    $('.submit-fail, .submit-success').click(function() {
+        $(this).hide();
+    })
 });
+  
