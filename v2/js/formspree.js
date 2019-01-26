@@ -1,18 +1,16 @@
-$(document).ready(function() {
-    $('#contactform').submit(function(e) {
+$(function($) {
+    $('#contactform').submit(function(event) {
+		event.preventDefault();
         $.ajax({
-	    method: 'POST',
-	    url: '//formspree.io/txcdxevubase@mail.ru',
-	    data: $('#contactform').serialize(),
-	    datatype: 'json'
+			url: 'https://formspree.io/txcdxevubase@mail.ru',
+			method: 'POST',
+			data: {message: 'hello!'},
+			datatype: 'json'
+		}).done(function(){
+			alert("Email was sent");
+		}).fail(function() {
+			alert("Error!");
+		});
 	});
-	e.preventDefault();
-	$(this).get(0).reset();
-	$('.submit-success').fadeToggle(400);
-    });
-  
-    $('.submit-fail, .submit-success').click(function() {
-        $(this).hide();
-    })
 });
   
