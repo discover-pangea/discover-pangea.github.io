@@ -766,10 +766,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .contact-form .input {
 	margin-bottom:20px;
+	color: white;
 }
 
 .contact-form textarea.input {
 	height:200px;
+}
+
+.contact-form .input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
 /* -- Contact Information -- */

@@ -26,7 +26,7 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-
+		
     </head>
 	<body>
 
@@ -53,11 +53,11 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#courses">Courses</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#contact-cta">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -77,8 +77,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">Edusite Free Online Training Courses</h1>
-							<p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant, eu pro alii error homero.</p>
+							<h1 class="white-text">Discover Pangea</h1>
+							<p class="lead white-text">The World is one. See it all!</p>
 							<a class="main-button icon-button" href="#">Get Started!</a>
 						</div>
 					</div>
@@ -444,9 +444,22 @@
 
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<h2 class="white-text">Contact Us</h2>
-						<p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-						<a class="main-button icon-button" href="#">Contact Us Now</a>
+						<p class="lead white-text">Fill out the request form describing your needs and we will contact you asap.</p>
+						<div class="contact-form">
+							<form id="contactform" name="contact_form" action="https://formspree.io/txcdxevubase@mail.ru" method="post">
+								<input class="input" type="text" name="name" required  placeholder="Name">
+								<input class="input" type="text" name="phone" required  placeholder="Phone number">
+								<input class="input" type="email" name="email" required  placeholder="Email">
+								<input class="input" type="text" name="organization" required  placeholder="School/Company">
+								<input class="input" type="text" name="country" required  placeholder="Country">
+								<textarea class="input" name="message" required  placeholder="Enter your Message"></textarea>
+								<input type="submit" value="Send Message" class="main-button icon-button">
+							</form>
+						</div>
+						
 					</div>
+					
+					
 
 				</div>
 				<!-- /row -->
@@ -479,11 +492,11 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#courses">Courses</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#contact-cta">Contact</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
@@ -533,6 +546,9 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/scrolling.js"></script>
+		<script type="text/javascript" src="js/formspree.js"></script>
+
 
 	</body>
 </html>
