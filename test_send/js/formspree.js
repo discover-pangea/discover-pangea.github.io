@@ -16,9 +16,6 @@ $(document).on('submit', '#contact-form1', function(e) {
             message: body_text
         },
         dataType: "json",
-        beforeSend: function( xhr ) {
-            spinner.show();
-      }
     }).done(function(){
         $('#contacts-success-wrapper').show();
     }).fail(function() {
