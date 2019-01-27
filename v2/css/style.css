@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size:38px;
+	font-size:60px;
 }
 
 h2 {
@@ -125,6 +125,10 @@ blockquote:before{
 
 .section-header {
 	margin-bottom:40px;
+}
+	
+.section-header p {
+	text-align: justify;
 }
 
 /* --- Background Image --- */
@@ -417,6 +421,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	left:0;
 	right:0;
 }
+.home-wrapper p{
+	font-size:25px;
+}
 
 /* -- Breadcrumb -- */
 .hero-area-tree li {
@@ -468,6 +475,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	padding-left:100px;
 }
 
+.feature .mission {
+	font-size: 18px;
+}
+
 /* -- About Img -- */
 .about-img {
 	margin-top:40px;
@@ -475,6 +486,17 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .about-img > img {
 	width:100%;
+}
+
+.about-hr {
+	margin-top:50px;
+	margin-bottom:50px;
+	border-color: #EBEBEB;
+}
+
+.about-mission {
+	margin-top: 30px;
+	font-size: 18px;
 }
 
 /* -- About Video -- */
@@ -1265,6 +1287,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	.post-pagination .pages {
 		display:none;
 	}
+	
 }
 
 @media only screen and (max-width: 480px) {
