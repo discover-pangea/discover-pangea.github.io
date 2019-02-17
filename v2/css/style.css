@@ -458,6 +458,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	        transform:translateY(-50%);
 	left:0;
 	right:0;
+	text-align: center;
 }
 .home-wrapper p{
 	font-size:25px;
