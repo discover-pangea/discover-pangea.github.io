@@ -545,6 +545,17 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	text-align: center;
 }
 
+/* -- NYC quote -- */
+blockquote p {
+	text-align: justify;
+	font-size: 30px;
+}
+blockquote cite {
+    position: absolute;
+    right: 0px;
+	font-size: 25px;
+}
+
 /* -- Advantages -- */
 .advantages {
 	padding-left: 80px;
