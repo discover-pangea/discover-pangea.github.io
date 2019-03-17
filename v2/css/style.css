@@ -110,8 +110,6 @@ blockquote:before{
 	height:40px;
 	line-height:40px;
 	text-align:center;
-	border-radius:50%;
-	border:1px solid #EBEBEB;
 }
 
 
@@ -554,11 +552,13 @@ img.personal_quote {
 	border-radius: 50%;
 	width: 300px;
 	height: 300px;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 blockquote p.personal_quote {
 	text-align: justify;
+	font-size: 20px;
+	font-style: italic;
 }
 
 /* -- NYC quote -- */
