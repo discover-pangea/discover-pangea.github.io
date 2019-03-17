@@ -526,11 +526,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- About Img -- */
 .about-img {
-	margin-top:40px;
+	margin-top:70px;
 }
 
 .about-img > img {
 	width:100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-hr {
@@ -545,8 +546,23 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	text-align: center;
 }
 
+div.personal_quote {
+	text-align: center;
+}
+
+img.personal_quote {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	margin-top: 50px;
+}
+
+blockquote p.personal_quote {
+	text-align: justify;
+}
+
 /* -- NYC quote -- */
-blockquote p {
+blockquote p.famous {
 	text-align: justify;
 	font-size: 30px;
 }
